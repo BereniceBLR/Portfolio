@@ -153,6 +153,15 @@ section {
     margin: 2rem 0 4rem;
 }
 
+
+
+canvas {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+
 .btn-box {
     position: relative;
     display: flex;
@@ -274,7 +283,99 @@ section {
 }
 
 
+.resume {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 75px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    line-height: 1.6;
+    font-size: larger;
+}
 
+.print-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--second-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background-color: var(--second-bg-color);
+}
+
+.pdf-download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--second-bg-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pdf-download-button:hover {
+    background-color: var(--main-color);
+}
+
+
+/* Hide the button when printing */
+@media print {
+    .print-button {
+        display: none;
+    }
+}
+
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #495057;
+    margin-top: 40px;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #343a40;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    background-color: #e9ecef;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
 
 .about {
     display: flex;

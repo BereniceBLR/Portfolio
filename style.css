@@ -563,9 +563,201 @@ span {
     width: 50%;
 }
 
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+h2 {
+    color: #ff69b4;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.card p {
+  padding: 0 1rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.card button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--second-bg-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: var(--main-color);
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Adjust for header height */
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
+
+.project-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.text-section h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+  font-size: 3rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-brief {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.features {
+  font-size: 2rem;
+  list-style: disc;
+  margin-left: 1.25rem;
+  color: #444;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 2rem;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: var(--second-bg-color);
+}
+
+.button.outline {
+  background: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.button.outline:hover {
+  background-color: var(--second-bg-color);
+  color: white;
+}
+
+.image-section {
+ 
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.image-hover-wrapper {
+  position: relative;
+  width: 600px;    /* Adjust as needed */
+  height: 400px;
+  overflow: hidden;
+  border: 4px solid var(--main-color);
+  border-radius: 8px;
+}
+
+/* Shared styles for both images */
+.image-hover-wrapper .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  top: 0;
+  left: 0;
+}
+
+/* Cover image visible by default */
+.image-hover-wrapper .cover {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* On hover: hide the cover, reveal original */
+.image-hover-wrapper:hover .cover {
+  opacity: 0;
+}
+
+
+
+
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
+    background: var(--second-bg-color);
 }
 
 .contact h2 {
